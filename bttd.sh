@@ -1,9 +1,5 @@
 #!/bin/bash
 ipTablsrc="/home/guls/Documents/KEEP/TRGT_FLD/srcIP_final"
-echo "If you have not made your whitelist file please do so now before continuing ctrl-C to exit."
-echo "If you have the whitelist file please enter it's destination now."
-read whiteIPs
-mapfile -t warry < "$whiteIPs"
 echo "This program is used to ban any ips that have failed login in  /var/log/auth.log for ssh."
 echo "Please enter the destination or name (if you want to save to the cd) of the first temp file"
 read blockIPs
